@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%; /* Acoperă jumătatea de sus a paginii */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container {
+    background-color: rgba(255, 255, 255);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 50vh; /* Ajustează marginea de sus pentru a se potrivi cu imaginea de fundal */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aici aliniați elementele pe axa orizontală în centru */
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+/* Spațiu între elemente */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Lățimea butonului Submit */
+.btn-primary {
+    width: 250px;
+    margin-top: 31px;
+}
+#background-carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place it behind other content */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none; /* Hide carousel navigation controls */
+}
+
+.destination-container {
+    background-color: rgba(255, 255, 255);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.destination-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite trecerea la linii noi când spațiul este insuficient */
+    margin-bottom: 20px;
+}
+
+.destination-cell {
+    flex-basis: calc(33.33% - 10px); /* Lățimea celulei pentru 3 celule pe rând */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ascunde orice conținut care depășește limitele celulei */
+}
+
+.destination-cell img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative; /* Asigură că imaginea inițială se află în același context de poziționare cu celula */
+    z-index: 1; /* Face ca imaginea inițială să fie desenată deasupra oricărui conținut al celulei */
+}
+.figure {
+    position: relative;
+    width: 360px; /* can be omitted for a regular non-lazy image */
+    max-width: 100%;
+}
+.figure img.Sirv.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+    }
+.figure:hover img.Sirv.image-hover {
+    opacity: 1;
+}
+
+/* Stilizați titlul, descrierea și prețul */
+.destination-cell h3 {
+    font-size: 1.2rem;
+}
+
+.destination-cell p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Stilizați prețul cu o culoare diferită, dacă doriți */
+.destination-cell p:last-child {
+    color: #e74c3c; /* Exemplu de culoare roșie pentru preț */
+}
+
+.btn-secondary:hover {
+    transform: scale(1.1); /* Scale up to 110% of original size */
+    transition: transform 0.2s ease-in-out; /* Smooth transition effect */
+}
+
+.btn-primary.pulse {
+    animation: pulse 1s infinite; /* Apply the pulse animation infinitely */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Scale up to 110% at 50% keyframe */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end; /* Alinează la dreapta */
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-left: 5px; /* Adaugă spațiu între butoane (opțional) */
+}
+
+.exploding-image {
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center center;
+}
+
+.explode {
+    transform: scale(2);
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media a,
+.legal-contact a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+

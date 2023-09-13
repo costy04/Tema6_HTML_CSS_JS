@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular cu imagine de fundal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+ integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background-carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/2000/1500?grayscale" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/2000/1501?grayscale" class="d-block w-100" alt="Image 2">
+          </div>
+          <!-- Add more carousel items with different images as needed -->
+        </div>
+      </div>
+      
+    <div class="container">
+        <div class="secondary-bg p-3 position-relative">
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="leaveFrom">Leave From:</label>
+                    <select id="leaveFrom" class="form-control"></select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="to">To:</label>
+                    <select id="to" class="form-control"></select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="datepicker">Selectează o dată:</label>
+                    <input type="text" id="datepicker" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-primary pulse">Search</button>
+                </div>
+            </div>
+            <img id="jokerImage" src="https://i.pinimg.com/550x/90/c9/d3/90c9d327f794b9e6be7c1dfc1aec8fa7.jpg" alt="Joker" style="display: none;">
+            <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+            <div class="destination-container">
+                <div class="destination-row">
+                  <div class="destination-cell" id="1">
+                    <div class="figure">
+                        <img class="Sirv image-main" src="https://fastly.picsum.photos/id/74/4288/2848.jpg?hmac=q02MzzHG23nkhJYRXR-_RgKTr6fpfwRgcXgE0EKvNB8" alt="">
+                        <img class="Sirv image-hover" src="https://fastly.picsum.photos/id/76/4912/3264.jpg?hmac=VkFcSa2Rbv0R0ndYnz_FAmw02ON1pPVjuF_iVKbiiV8" alt="">
+                    </div>
+                    <h3>Destinație 1</h3>
+                    <p>Descriere pentru Destinație 1.</p>
+                    <p>Preț pe noapte: $100</p>
+                    <button class="btn btn-secondary">Mai multe detalii</button>
+                  </div>
+                  <div class="destination-cell" id="2">
+                    <div class="figure">
+                        <img class="Sirv image-main" src="https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA" alt="">
+                        <img class="Sirv image-hover" src="https://fastly.picsum.photos/id/44/4272/2848.jpg?hmac=a0rRK2VqTNYMvxqfQjFI65m4ZzMGnKRJzHvrJovjoQQ" alt="">
+                    </div>
+                    <h3>Destinație 2</h3>
+                    <p>Descriere pentru Destinație 2.</p>
+                    <p>Preț pe noapte: $120</p>
+                    <button class="btn btn-secondary">Mai multe detalii</button>
+                  </div>
+                  <div class="destination-cell" id="3">
+                    <div class="figure">
+                        <img class="Sirv image-main" src="https://fastly.picsum.photos/id/83/2560/1920.jpg?hmac=LFdAxfpbYKs0hZr0LhHVWyqXarWGg7FtM8pIzJPBc0w" alt="">
+                        <img class="Sirv image-hover" src="https://fastly.picsum.photos/id/46/3264/2448.jpg?hmac=ZHE8nk-Q9uRp4MxgKNvN7V7pYFvA-9BCv99ltY3HBv4" alt="">
+                    </div>
+                    <h3>Destinație 3</h3>
+                    <p>Descriere pentru Destinație 3.</p>
+                    <p>Preț pe noapte: $150</p>
+                    <button class="btn btn-secondary">Mai multe detalii</button>
+                  </div>
+                  <div class="destination-cell" id="4">
+                    <div class="figure">
+                        <img class="Sirv image-main" src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" alt="">
+                        <img class="Sirv image-hover" src="https://fastly.picsum.photos/id/47/4272/2848.jpg?hmac=G8dXSLa-ngBieraQt5EORu-4r6tveX3fhvBTZM0Y8xM" alt="">
+                    </div>
+                    <h3>Destinație 4</h3>
+                    <p>Descriere pentru Destinație 3.</p>
+                    <p>Preț pe noapte: $150</p>
+                    <button class="btn btn-secondary">Mai multe detalii</button>
+                  </div>
+                  <div class="destination-cell" id="5">
+                    <div class="figure">
+                        <img class="Sirv image-main" src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE" alt="">
+                        <img class="Sirv image-hover" src="https://fastly.picsum.photos/id/90/3000/1992.jpg?hmac=v_xO0GFiGn3zpcKzWIsZ3WoSoxJuAEXukrYJUdo2S6g" alt="">
+                    </div>
+                    <h3>Destinație 5</h3>
+                    <p>Descriere pentru Destinație 3.</p>
+                    <p>Preț pe noapte: $150</p>
+                    <button class="btn btn-secondary">Mai multe detalii</button>
+                  </div>
+                  <div class="destination-cell" id="6">
+                    <div class="figure">
+                        <img class="Sirv image-main" src="https://fastly.picsum.photos/id/14/2500/1667.jpg?hmac=ssQyTcZRRumHXVbQAVlXTx-MGBxm6NHWD3SryQ48G-o" alt="">
+                        <img class="Sirv image-hover" src="https://fastly.picsum.photos/id/37/2000/1333.jpg?hmac=vpYLNsQZwU2szsZc4Uo17cW786vR0GEUVq4icaKopQI" alt="">
+                    </div>
+                    <h3>Destinație 6</h3>
+                    <p>Descriere pentru Destinație 1.</p>
+                    <p>Preț pe noapte: $100</p>
+                    <button class="btn btn-secondary">Mai multe detalii</button>
+                  </div>
+                </div>
+                <!-- Adăugați mai multe rânduri și celule pentru mai multe destinații, dacă este necesar -->
+              </div>    
+              <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">&raquo;</a>
+              </div>      
+        </div>
+        <p id="copyright" style="cursor: pointer;">&copy; TravelBook</p>
+        <div class="footer">
+          <div class="social-media">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="legal-contact">
+              <a href="#">Termeni si conditii</a> |
+              <a href="#">Politica de confidentialitate</a> |
+              <a href="#">Contact</a>
+          </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
